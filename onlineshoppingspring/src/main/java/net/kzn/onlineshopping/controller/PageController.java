@@ -13,9 +13,40 @@ public class PageController
 	public ModelAndView index()
 	{
 		ModelAndView mv=new ModelAndView("page");
+		System.out.println("test.............1");
+		mv.addObject("title","home");
+		mv.addObject("userClickHome",true);
+		return mv;
+	}
+	@RequestMapping(value={"/about"})
+	public ModelAndView about()
+	{
+		ModelAndView mv=new ModelAndView("page");
+		System.out.println("test.............1");
+		mv.addObject("title","About Us");
+		mv.addObject("userClickAbout",true);
+		return mv;
+	}
+	@RequestMapping(value={"/contact"})
+	public ModelAndView contact()
+	{
+		ModelAndView mv=new ModelAndView("page");
+		System.out.println("test.......contact......1");
+		mv.addObject("title","Contact Us");
+		mv.addObject("userClickContact",true);
+		return mv;
+	}
+	
+	
+	/*
+	@RequestMapping(value={"/","/home","/index"})
+	public ModelAndView index()
+	{
+		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("greeting","Welcome to Spring Web MVC");
 		return mv;
 	}
+	
 	//http://localhost:8081/onlineshoppingspring/test  //not run because greeting parameter value is not present
 	//http://localhost:8081/onlineshoppingspring/test?greeting=hi //run
 	@RequestMapping(value={"/test"})
@@ -50,5 +81,5 @@ public class PageController
 		mv.addObject("greeting",greeting1);
 		return mv;
 	}
-
+*/
 }

@@ -33,8 +33,7 @@
 <!-- char here -->
 
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
-<!-- bootstrap-readable-theme.css -->
-<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+
 
 <!-- Custom styles for this template -->
 <!--     change here by amir <link href="css/shop-homepage.css" rel="stylesheet"> -->
@@ -55,7 +54,7 @@
 
 				<%@include file="home.jsp"%>
 
-<%-- 				<%@include file="./shared/footer.jsp"%> --%>
+				<%@include file="./shared/footer.jsp"%>
 
 			</c:if>
 
@@ -75,8 +74,8 @@
 		<!-- /.container -->
 
 		<!-- Footer -->
-			<%@include file="./shared/footer.jsp" %>
- 
+		<%-- 	<%@include file="./shared/footer.jsp" %> --%>
+
 		<!-- Bootstrap core JavaScript -->
 		<!--     <script src="vendor/jquery/jquery.min.js"></script> -->
 		<!--    change by amir <script src="js/jquery.min.js"></script> -->
