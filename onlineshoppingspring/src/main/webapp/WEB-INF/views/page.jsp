@@ -52,11 +52,8 @@
 		<div class="content">
 			<!--   		Loading the Page Content(home page) -->
 			<c:if test="${userClickHome==true}">
-
 				<%@include file="home.jsp"%>
-
 <%-- 				<%@include file="./shared/footer.jsp"%> --%>
-
 			</c:if>
 
 			<!--   		Loading the Page about -->
@@ -68,6 +65,13 @@
 			<c:if test="${userClickContact==true}">
 				<%@include file="contact.jsp"%>
 			</c:if>
+			
+			<!--   		Loading the Page Contact -->
+			<c:if test="${userClickAllProducts==true or userClickCategoryProducts==true}">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+			
+			
 		</div>
 
 
